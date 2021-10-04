@@ -21,4 +21,6 @@
 5. Columns can be taken out of a row and treated like a parent
 
 ### Sandbox link for this project:-
+https://codesandbox.io/s/github/iyerswapnil94/ReactNestedDnd
 
+### Note: Colors, Sizes, icons and all other syling is customizable
