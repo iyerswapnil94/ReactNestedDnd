@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+  padding: 0 20px;
+  margin: 30px 400px;
+  border: 1px solid green;
+}
+
+.dropZone {
+  flex: 0 0 auto;
+  height: 12px ;
+  transition: 200ms all;
+  /* background-color: red; */
+  margin: 4px 10px;
+}
+
+.dropZone:nth-of-type(2n) {
+  display: none;
+}
+
+.dropZone.verticalDrag {
+  width: auto;
+  height: 12px;
+  margin: 0;
+  /* background-color: red; */
+}
+
+.dropZone:not(.verticalDrag).isLast {
+  flex: 1 1 auto;
+  display: block;
+}
+
+.dropZone.active {
+  background: #00a2ff;
+  transition: 100ms all;
+}
+
+
+.column {
+  background-color: burlywood;
+  flex: 1 1 100%;
+  padding: 10px;
+  cursor: move;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 50px;
+}
+
+.base {
+  padding: 0 10px;
+  background-color: white;
+}
+
+.row {
+  background-color: darkgoldenrod;
+  padding: 10px;
+  cursor: move;
+}
+
+.pageContainer {
+  display: flex;
+  flex: 1;
+  margin-bottom: 100px;
+}
